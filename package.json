@@ -1,0 +1,17 @@
+{
+  "name": "jackpotjs",
+  "version": "1.0.0",
+  "description": "Motor de lógica para juegos de azar (Blackjack, Ruleta, Slots). Devuelve resultados en JSON. Sin persistencia de usuarios ni balances.",
+  "main": "src/index.js",
+  "keywords": ["casino","blackjack","roulette","slots","games","gambling","bot"],
+  "author": "l3xen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alerezii/jackpotjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alerezii/jackpotjs/issues"
+  },
+  "homepage": "https://github.com/alerezii/jackpotjs#readme",
+  "license": "MIT"
+}
