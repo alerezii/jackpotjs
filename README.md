@@ -4,14 +4,7 @@ Motor de lógica para juegos de azar (Blackjack, Ruleta, Slots). Esta librería 
 
 ## Instalación
 
-Desde NPM (cuando se publique):
-
-npm install jackpotjs
-
-O localmente en desarrollo:
-
-# desde el directorio que contiene JackpotJS
-npm install ./JackpotJS
+`npm install jackpotjs`
 
 ## Contenido
 
@@ -23,9 +16,11 @@ npm install ./JackpotJS
 
 ## Uso básico (Node)
 
+```js
 const { BlackjackGame, RouletteGame, SlotsGame } = require('jackpotjs');
 
 // Blackjack (ejemplo síncrono)
+
 const bj = new BlackjackGame();
 bj.start(10); // inicia partida con apuesta 10
 bj.hit();
@@ -43,6 +38,7 @@ console.log(roulette.spin(bets));
 // Slots
 const slots = new SlotsGame();
 console.log(slots.spin(5));
+```
 
 ## Uso en un bot (ejemplo para Discord)
 
@@ -51,6 +47,7 @@ console.log(slots.spin(5));
 
 Ejemplo (simplificado):
 
+```js
 // pseudo-código
 const result = slots.spin(10);
 if (result.payout > 0) {
@@ -58,6 +55,7 @@ if (result.payout > 0) {
 } else {
   // restar apuesta
 }
+```
 
 ## Formato de salida
 
@@ -71,9 +69,4 @@ Cada juego devuelve objetos JSON con detalles suficientes para que el bot calcul
 
 - Sin dependencias externas.
 - Código modular y documentado.
-- Listo para publicar en NPM.
-
-Si quieres, puedo:
-- Añadir tests unitarios básicos.
-- Publicar un paquete `package.json` con author/keywords completos.
-- Ajustar reglas de Blackjack (p. ej. dealer hits soft 17) según prefieras.
+- Listo para utilizar en tus proyectos.
